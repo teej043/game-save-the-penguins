@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-tails = ds_list_create();
-tail_distance = 70;
-turn_speed = 3;
+
+tail_distance = 70; // distance beetween tails
+turn_speed = 5; // dictates turning speed
 behind_tail = noone;
+msg_scorer_name = -1;
 
 speed = 5;
 

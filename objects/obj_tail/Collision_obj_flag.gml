@@ -17,4 +17,6 @@ if (is_tail_end) {
 	if (!instance_exists(obj_flag)){
 		instance_create_depth(random(view_wport[0]), random(view_hport[0]), -200, obj_flag);
 	}
+	
+	score +=1;
 }

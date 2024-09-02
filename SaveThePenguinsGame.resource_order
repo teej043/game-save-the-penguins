@@ -19,11 +19,13 @@
   "ResourceOrderSettings":[
     {"name":"obj_flag","order":1,"path":"objects/obj_flag/obj_flag.yy",},
     {"name":"obj_gui","order":3,"path":"objects/obj_gui/obj_gui.yy",},
+    {"name":"obj_menu","order":4,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_tail","order":2,"path":"objects/obj_tail/obj_tail.yy",},
-    {"name":"Game","order":1,"path":"rooms/Game/Game.yy",},
+    {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
     {"name":"spr_back","order":4,"path":"sprites/spr_back/spr_back.yy",},
     {"name":"spr_collision","order":3,"path":"sprites/spr_collision/spr_collision.yy",},
     {"name":"spr_flag","order":1,"path":"sprites/spr_flag/spr_flag.yy",},
     {"name":"spr_penguin","order":2,"path":"sprites/spr_penguin/spr_penguin.yy",},
+    {"name":"spr_player","order":5,"path":"sprites/spr_player/spr_player.yy",},
   ],
 }
