@@ -3,7 +3,7 @@
 
 
 tail_distance = 70; // distance beetween tails
-turn_speed = 5; // dictates turning speed
+turn_speed = 1.5; // dictates turning speed
 behind_tail = noone;
 msg_scorer_name = -1;
 

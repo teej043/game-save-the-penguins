@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_index = floor((direction % 360) / 22.5);
-depth = -y;
+button_hovered = true;
+window_set_cursor(cr_handpoint);

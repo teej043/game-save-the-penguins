@@ -13,3 +13,4 @@ if (keyboard_check(ord("D"))) {
 
 
 image_index = floor((direction % 360) / 22.5);
+depth = -y;

@@ -15,7 +15,7 @@ if (is_tail_end) {
 	with other instance_destroy();	
 	
 	if (!instance_exists(obj_flag)){
-		instance_create_depth(random(view_wport[0]), random(view_hport[0]), -200, obj_flag);
+		spawn_random(obj_flag, 200);
 	}
 	
 	score +=1;
