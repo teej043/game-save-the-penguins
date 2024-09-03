@@ -7,7 +7,7 @@
 
 
 
-image_index = floor((direction % 360) / 22.5);
+image_index = floor((direction % 360) / (360 / sprite_get_number(sprite_index)));
 depth = -y;
 
 
