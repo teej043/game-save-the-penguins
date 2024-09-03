@@ -14,3 +14,9 @@ turning_speed = 0;
 turning_speed_max = 15;
 turning_speed_increment = 1;
 
+
+
+
+// Create variables for the mouse anchor position.
+global.mouse_anchor_x = 0;
+global.mouse_anchor_y = 0;

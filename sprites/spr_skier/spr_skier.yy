@@ -40,8 +40,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Hero",
+    "path":"folders/Sprites/Hero.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

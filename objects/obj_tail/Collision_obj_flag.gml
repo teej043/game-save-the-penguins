@@ -12,7 +12,9 @@ if (is_tail_end) {
 	    y : id.y - lengthdir_y(tail_distance, direction),
 	});
 
-	with other instance_destroy();	
+	with other {
+		instance_destroy();
+	}
 	
 	if (!instance_exists(obj_flag)){
 		spawn_random(obj_flag, 200);
