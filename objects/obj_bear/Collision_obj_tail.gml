@@ -3,6 +3,7 @@
 
 if (!is_stunned) {
 	spd = 0;
+	speed = spd;
 	sprite_index = spr_bear_front_hurt;
 	hp--;
 

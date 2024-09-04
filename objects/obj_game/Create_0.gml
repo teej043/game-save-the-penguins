@@ -19,6 +19,6 @@ display_set_gui_maximise(1,1, pos[0], pos[1]);
 */
 
 display_set_gui_size(bw, bh);
-// display_set_gui_maximise(2, 2, 0, 0);
+display_set_gui_maximise(1, 1, 0, 0);
 
 room_goto_next();
