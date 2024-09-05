@@ -1,0 +1,3 @@
+// Reinitialize
+
+score = 0;

@@ -12,5 +12,5 @@ if (VISUAL_DEBUG) {
 	draw_text(x,y+60, string(abs(direction) mod (image_number)));
 	draw_text(x,y+80, string((direction * (abs(100 / 360)))));
 	
-	draw_sprite_ext(spr_btn, 0,x, y+300,  3,1,0,c_white,1);
+	draw_text(x, y+100, string(score mod 5));
 }

@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.scores = [];
+global.token = "";
+
+global.req_postscores = null;
+global.req_getscores = null;
+global.req_token = null;
+
+online_highscore_start();
 
 bw = browser_width;
 bh = browser_height;
@@ -21,4 +29,13 @@ display_set_gui_maximise(1,1, pos[0], pos[1]);
 display_set_gui_size(bw, bh);
 display_set_gui_maximise(1, 1, 0, 0);
 
+
 room_goto_next();
+
+// get scores
+alarm[1] = 60;
+
+
+
+// test post score
+alarm[0] = 360;

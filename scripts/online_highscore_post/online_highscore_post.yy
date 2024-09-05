@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"online_highscore_post",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"online_highscore_post",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

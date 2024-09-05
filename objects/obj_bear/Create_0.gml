@@ -9,6 +9,7 @@ max_spd = 0.25;
 
 orig_sprite_index = sprite_index;
 is_stunned = false;
+is_koed = false;
 
 image_speed = 20/60;
 
