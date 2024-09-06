@@ -14,3 +14,6 @@ if (VISUAL_DEBUG) {
 	
 	draw_text(x, y+100, string(score mod 5));
 }
+
+
+

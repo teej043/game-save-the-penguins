@@ -11,6 +11,13 @@ orig_sprite_index = sprite_index;
 is_stunned = false;
 is_koed = false;
 
+// spawn a shadow
+
+
 image_speed = 20/60;
 
 alarm[1] = 60; // check if target is lost every 60 seconds;
+
+
+
+my_shadow = instance_create_layer(x,y,"Shadow_layer" ,obj_shadow);

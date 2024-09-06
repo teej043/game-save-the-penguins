@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 image_index = floor((direction % 360) / 22.5);
-depth = -y;
+//depth = -y;
 
  if instance_exists(front) {
 	if point_distance(x, y, front.x, front.y) > tail_distance // DIST here is the maximum distance from each other that you want the instances to be
@@ -13,3 +13,8 @@ depth = -y;
 	}
 }
     
+	
+with (my_shadow) {
+	x = other.x;
+	y = other.y;
+}
