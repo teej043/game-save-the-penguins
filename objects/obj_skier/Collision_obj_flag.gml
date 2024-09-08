@@ -5,6 +5,8 @@ if (!instance_exists(obj_tail)) {
 	
 	var _bounds_pad = 100;
 	
+	audio_play_sound(snd_penguin_call, 11, false, 0.3);
+	
 	behind_tail = instance_create_depth(x, y, -100, obj_tail, {
 		front: id,
 		direction : point_direction(x, y, id.x, id.y),
@@ -19,6 +21,8 @@ if (!instance_exists(obj_tail)) {
 	if (!instance_exists(obj_flag)){
 		spawn_random(obj_flag, 200);
 	}
+	
+	score += 1;
 
 }
 

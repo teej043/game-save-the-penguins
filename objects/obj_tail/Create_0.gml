@@ -3,6 +3,11 @@
 
 is_tail_end = true;
 tail_distance = 70;
+
+obj_skier.end_tail = id;
+
+is_following = true;
+
 alarm[0] = 10;
 
 speed = 5;

@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Make enemy lie on the ground for a while
 // You can write your code in this editor
 
 if is_koed {

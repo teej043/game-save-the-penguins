@@ -3,3 +3,7 @@
 
 
 instance_destroy(my_tracker);
+
+if instance_exists(my_fx) {
+	instance_destroy(my_fx);
+}

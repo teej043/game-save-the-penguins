@@ -9,10 +9,8 @@ if (!is_stunned) {
 	with(other) {
 		instance_destroy();
 	}
-
-	// Deduct score
-	score -= 1;
-
+	
+	global.lost_flags +=1;
 
 
 	// Find new target
@@ -22,6 +20,6 @@ if (!is_stunned) {
 	}
 	
 	target = instance_nearest(x, y, obj_flag);
-	move_towards_point(target.x, target.y, spd);
+	// move_towards_point(target.x, target.y, spd);
 
 }

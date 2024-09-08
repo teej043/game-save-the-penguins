@@ -40,6 +40,7 @@ function online_highscore_post(_score) {
 		var _headers = ds_map_create();
 		ds_map_add(_headers, "Authorization", $"Bearer {global.token}");
 		ds_map_add(_headers, "Content-Type", "application/json");
+		ds_map_add(_headers, "Host", HIGHSCORE_HOST);
 
 
 		/*

@@ -4,6 +4,8 @@
 if (!is_stunned) {
 
 	if instance_exists(target) {
+		// but if there's a nearer flag, target that one.
+		target = instance_nearest(x, y, obj_flag);
 
 	} else {
 		if (instance_exists(obj_flag)) {
@@ -12,7 +14,7 @@ if (!is_stunned) {
 		}
 	}
 	
-	move_towards_point(target.x, target.y, spd);
+	// move_towards_point(target.x, target.y, spd);
 
 }
 

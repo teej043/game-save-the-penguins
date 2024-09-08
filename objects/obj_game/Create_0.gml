@@ -1,14 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+global.token = HIGHSCORE_JWT;
+
+// Only use when jwt has expired
+// online_highscore_start();
+
 global.scores = [];
-global.token = "";
 
-global.req_postscores = null;
-global.req_getscores = null;
-global.req_token = null;
 
-online_highscore_start();
+global.req_postscores = 0;
+global.req_getscores = 0;
+global.req_token = 0;
+
+
+global.attained_flags = 0;
+global.knockedout_enemies = 0;
+global.crashes = 0;
+global.lost_flags = 0;
+
+
 
 bw = browser_width;
 bh = browser_height;
@@ -25,6 +37,7 @@ window_center();
 display_set_gui_size(bw, bh);
 display_set_gui_maximise(1, 1, 0, 0);
 
+window_set_color(#008080);
 
 room_goto_next();
 

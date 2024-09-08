@@ -11,10 +11,13 @@ orig_sprite_index = sprite_index;
 is_stunned = false;
 is_koed = false;
 
+mp_potential_settings(45, 5, 5, true);
+
 // spawn a shadow
 
-
+speed = max_spd;
 image_speed = 20/60;
+
 
 alarm[1] = 60; // check if target is lost every 60 seconds;
 
