@@ -22,12 +22,12 @@ function constants() {
 	#macro Test:VISUAL_DEBUG 1
 	
 	#macro Test:HIGHSCORE_GAMEID 20
-	#macro Test:HIGHSCORE_URL  "http://gamehighs.local/wp-json/wp/v2/game"
-	#macro Test:HIGHSCORE_JWT_URL "http://gamehighs.local/wp-json/jwt-auth/v1/token/"
+	#macro Test:HIGHSCORE_URL  "http://game-highscores.test/wp-json/wp/v2/game"
+	#macro Test:HIGHSCORE_JWT_URL "http://game-highscores.test/wp-json/jwt-auth/v1/token/"
 	#macro Test:HIGHSCORE_JWT "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZ2FtZWhpZ2hzLmxvY2FsIiwiaWF0IjoxNzI1NjE5ODIzLCJuYmYiOjE3MjU2MTk4MjMsImV4cCI6MTcyNjIyNDYyMywiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.Ktp9bJdIb9BsO5Mrx3_vbNBoatBoftOH2BDhMNmi_A0"
 	#macro Test:HIGHSCORE_HOST "127.0.0.1:51264"
 	
 	#macro Test:HIGHSCORE_USERNAME "admin"
-	#macro Test:HIGHSCORE_PASSWORD "Q)ivJjiA4vgquZ6YSg"
+	#macro Test:HIGHSCORE_PASSWORD "qRtNSZAitzx2VbW"
 }
 

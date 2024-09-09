@@ -16,19 +16,27 @@ if (ds_map_find_value(async_load, "id") == global.req_token_validate) {
 	
 		show_debug_message($"_resp.code: {_resp.code}");
 		show_debug_message($"_resp.data.status: {_resp.data.status}");
-	
-		if (_resp != null) {
-			global.is_token_valid = (_resp.code == "jwt_auth_valid_token" && _resp.data.status = 200) ?  true  : false;
+			
+		if (_resp.code == "jwt_auth_valid_token") {
+			show_debug_message("token is valid");
+			global.is_token_valid = true;
 		}
-	
-		show_debug_message($"global.is_token_valid is {global.is_token_valid}");
-	
-	
+		
 	} else {
 	
+		var _resp = json_parse(async_load[? "result"]);
+		
 		// There was no response.
-		global.highscores_unreachable = true;
-		show_debug_message("No response from online highscore server");
+		if (_resp.code == "jwt_auth_invalid_token") {
+			show_debug_message($"message: {_resp.message}");
+			
+			show_debug_message("token is invalid");
+			global.is_token_valid = false;
+				
+			show_debug_message("request new token");
+			online_highscore_token_request();
+		}
+				
 	}
 
 }
@@ -88,7 +96,6 @@ if (ds_map_find_value(async_load, "id") == global.req_getscores)
 			
 				// Print all struct members to the log
 				var _scores = struct_get_names(_temp.acf);
-			
 			
 				global.scores = _temp.acf.scores;
 			
