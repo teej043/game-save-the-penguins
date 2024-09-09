@@ -5,6 +5,10 @@
 // turning_speed = approach(turning_speed, turning_speed_max * turning_direction, turning_speed_increment);
 // direction += turning_speed_increment;
 
+if (global.game_state == GAME_STATE.PAUSED) {
+	return;
+}
+
 
 if (is_stunned) {
 	stunned_image_speed -= 0.05;

@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//depth = -y;
+if (global.game_state == GAME_STATE.PAUSED) {
+	return;
+}
 
 with(my_shadow) {
 	x = other.x;

@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+if (global.game_state == GAME_STATE.PAUSED) {
+	return;
+}
+
+
 image_index = floor((direction % 360) / 22.5);
 //depth = -y;
 

@@ -72,6 +72,7 @@
     {"id":{"name":"constants","path":"scripts/constants/constants.yy",},},
     {"id":{"name":"date_format","path":"scripts/date_format/date_format.yy",},},
     {"id":{"name":"draw_online_highscore","path":"scripts/draw_online_highscore/draw_online_highscore.yy",},},
+    {"id":{"name":"enumerators","path":"scripts/enumerators/enumerators.yy",},},
     {"id":{"name":"knockback","path":"scripts/knockback/knockback.yy",},},
     {"id":{"name":"multi_sort_by_score","path":"scripts/multi_sort_by_score/multi_sort_by_score.yy",},},
     {"id":{"name":"online_highscore_get","path":"scripts/online_highscore_get/online_highscore_get.yy",},},

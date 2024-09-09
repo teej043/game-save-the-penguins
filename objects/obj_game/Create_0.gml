@@ -1,9 +1,38 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-show_debug_log(true);
+randomize();
 
-show_debug_log(false)
+arr_alarms = [];
+arr_speed = [];
+arr_direction = [];
+arr_image_speed = [];
+
+add_alarm = function(_instance, _index, _value) {
+	array_push(arr_alarms, {_instance, _index, _value});
+	
+	_instance.alarm[_index] = -1;
+}
+
+add_speed = function(_instance, _value) {
+	array_push(arr_speed, {_instance, _value});
+	
+	_instance.speed = 0;
+}
+
+add_direction = function(_instance, _value) {
+	array_push(arr_direction, {_instance, _value});
+}
+
+
+add_image_speed = function(_instance, _value) {
+	array_push(arr_image_speed, {_instance, _value});
+	
+	_instance.image_speed = 0;
+}
+
+
+global.game_state = GAME_STATE.RUNNING;
 
 // Check for token
 global.token = "";
