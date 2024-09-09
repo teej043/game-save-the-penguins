@@ -1,11 +1,25 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+show_debug_log(true);
 
-global.token = HIGHSCORE_JWT;
+show_debug_log(false)
 
-// Only use when jwt has expired
-// online_highscore_start();
+// Check for token
+global.token = "";
+
+if file_exists("conf.ini") {
+	ini_open("conf.ini");
+	global.token = ini_read_string("tokens", "jwt", "");
+	ini_close();
+	
+	show_debug_message($"token from ini file: {global.token}");
+}
+
+
+
+global.is_token_valid = false;
+global.highscores_unreachable = false;
 
 global.scores = [];
 
@@ -19,6 +33,16 @@ global.attained_flags = 0;
 global.knockedout_enemies = 0;
 global.crashes = 0;
 global.lost_flags = 0;
+
+
+
+if (global.token == "" || global.token == "undefined") {
+	show_debug_message($"global.token: {global.token}");
+	online_highscore_token_request();
+} else {
+	show_debug_message("check if token is still valid");
+	online_highscore_token_validate();
+}
 
 
 
@@ -39,10 +63,15 @@ display_set_gui_maximise(1, 1, 0, 0);
 
 window_set_color(#008080);
 
+
 room_goto_next();
+
+
 
 // get scores
 alarm[1] = 60;
 
 // test post score
 alarm[0] = 360;
+alarm[0] = 460;
+

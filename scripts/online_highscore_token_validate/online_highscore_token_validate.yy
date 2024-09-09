@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"online_highscore_token_validate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"online_highscore_token_validate",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

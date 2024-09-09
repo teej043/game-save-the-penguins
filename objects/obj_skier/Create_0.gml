@@ -24,12 +24,10 @@ turn_speed = 2; // dictates turning speed
 
 turning_speed_increment = 1;
 
-
-
-
 // Create variables for the mouse anchor position.
 global.mouse_anchor_x = 0;
 global.mouse_anchor_y = 0;
 
 
 my_shadow = instance_create_layer(x, y, "Shadow_layer", obj_shadow);
+

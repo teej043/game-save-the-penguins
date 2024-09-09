@@ -8,7 +8,10 @@
 
 function online_highscore_post(_score) {
 	
-
+	if global.highscores_unreachable {
+		show_debug_message("highscores api not reachable, aborting score post");
+		exit;
+	}
 	
 	// When highscore is not full
 	if (array_length(global.scores) >= HIGHSCORE_MAX) {

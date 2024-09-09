@@ -22,7 +22,7 @@ if (is_tail_end) {
 		}
 	
 		if (!instance_exists(obj_flag)){
-			var _i = spawn_random(obj_flag, 400);
+			var _i = spawn_random(obj_flag, 500);
 			spawn_check_safe_pos(obj_bear,100,200, _i);
 		}
 	
