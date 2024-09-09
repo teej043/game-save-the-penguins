@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Collision with player tails
 // You can write your code in this editor
 
 if (!is_stunned) {
@@ -18,7 +18,7 @@ if (!is_stunned) {
 	image_speed : 0.2});
 	
 	
-	knockback(5, other.x, other.y, obj_boulder, 30, 6);
+	knockback(10, other.x, other.y, obj_boulder, 30, 10);
 	
 	
 	alarm[0] = 30;

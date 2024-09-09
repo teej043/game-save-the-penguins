@@ -36,6 +36,8 @@ global.lost_flags = 0;
 
 
 
+
+
 if (global.token == "" || global.token == "undefined") {
 	show_debug_message($"global.token: {global.token}");
 	online_highscore_token_request();
@@ -69,9 +71,9 @@ room_goto_next();
 
 
 // get scores
-alarm[1] = 60;
+alarm[1] = 10;
 
-// test post score
-alarm[0] = 360;
-alarm[0] = 460;
+// test post score NOTE: this erases scores
+// alarm[0] = 360;
+// alarm[0] = 460;
 
