@@ -51,10 +51,7 @@ if (keyboard_check_pressed(vk_escape)) {
 					var _val = arr_alarms[_i]._value;
 					
 					_instance.alarm[_alarm_i] = _val;
-				} catch(_exception) {
-					// do nothing
-					show_debug_message(_exception);
-				}
+				} catch(_exception) {}
 			}
 			
 			for (var _i = 0; _i < array_length(arr_speed); _i++) {
@@ -63,10 +60,7 @@ if (keyboard_check_pressed(vk_escape)) {
 					var _val = arr_speed[_i]._value;
 					
 					_instance.speed = _val;
-				} catch(_exception) {
-					// do nothing
-					show_debug_message(_exception);
-				}
+				} catch(_exception) {}
 			}
 			
 			
@@ -76,9 +70,7 @@ if (keyboard_check_pressed(vk_escape)) {
 					var _val = arr_direction[_i]._value;
 					
 					_instance.direction = _val;
-				} catch(_exception) {
-					// do nothing
-				}
+				} catch(_exception) {}
 			}
 			
 			for (var _i = 0; _i < array_length(arr_image_speed); _i++) {
@@ -87,9 +79,7 @@ if (keyboard_check_pressed(vk_escape)) {
 					var _val = arr_image_speed[_i]._value;
 					
 					_instance.image_speed = _val;
-				} catch(_exception) {
-					// do nothing
-				}
+				} catch(_exception) {}
 			}
 			
 			

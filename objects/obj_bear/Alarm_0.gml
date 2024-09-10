@@ -13,6 +13,7 @@ if (hp <= 0) {
 	spd = max_spd;
 	speed = spd;
 	is_stunned = false;
+	is_crashed = false;
 }
 
 

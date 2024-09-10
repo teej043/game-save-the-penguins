@@ -3,12 +3,15 @@
 
 
 max_hp = 5;
-hp = 5;
+hp = 15;
 spd = 0.25;
 max_spd = 0.25;
+knockback_spd = 3;
+knockback_max_spd = 6;
 
 orig_sprite_index = sprite_index;
 is_stunned = false;
+is_crashed = false;
 is_koed = false;
 
 mp_potential_settings(45, 5, 5, true);

@@ -24,8 +24,8 @@ function knockback(_distance, _startx, _starty, _obj = noone, _rot = 30, _checks
 	
 	do {
 		
-		_x = -lengthdir_x(5, point_direction(x, y, _startx, _starty) + _irot);
-		_y = -lengthdir_y(5, point_direction(x, y, _startx, _starty) + _irot);
+		_x = -lengthdir_x(5, point_direction(_startx, _starty, x, y) + _irot);
+		_y = -lengthdir_y(5, point_direction(_startx, _starty, x, y) + _irot);
 		
 		x = x + _x;
 		y = y + _y;
