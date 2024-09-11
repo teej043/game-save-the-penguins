@@ -14,6 +14,13 @@ is_stunned = false;
 is_crashed = false;
 is_koed = false;
 
+last_saved_x = 0;
+last_saved_y = 0;
+
+// stuck checks
+alarm[3] = 120;
+
+
 mp_potential_settings(45, 5, 5, true);
 
 // spawn a shadow
