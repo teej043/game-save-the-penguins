@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_lowest_highscore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_lowest_highscore",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

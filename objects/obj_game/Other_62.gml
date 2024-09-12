@@ -98,13 +98,16 @@ if (ds_map_find_value(async_load, "id") == global.req_getscores)
 				var _scores = struct_get_names(_temp.acf);
 			
 				global.scores = _temp.acf.scores;
+				global.highscores_retrieved = true;
 			
 			}
 		}
+		global.highscores_unreachable = false;
 	} 
 	else {
 		show_debug_message("api not reachable");
 		global.highscores_unreachable = true;
+		global.highscores_retrieved = false;
 	}
 	
 }

@@ -25,6 +25,7 @@ function online_highscore_get(){
 		
 		//global.req_getscores = http_request($"{HIGHSCORE_URL}/{HIGHSCORE_GAMEID}", "GET", _headers, json_stringify(_body));
 		
+		show_debug_message("requesting for highscores");
 		
 		global.req_getscores = http_get($"{HIGHSCORE_URL}/{HIGHSCORE_GAMEID}/?_fields=acf.scores");
 	}

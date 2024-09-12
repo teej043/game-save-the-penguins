@@ -49,9 +49,9 @@ if file_exists("conf.ini") {
 
 global.is_token_valid = false;
 global.highscores_unreachable = false;
+global.highscores_retrieved = false;
 
 global.scores = [];
-
 
 global.req_postscores = 0;
 global.req_getscores = 0;

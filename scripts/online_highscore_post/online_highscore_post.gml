@@ -17,8 +17,9 @@ function online_highscore_post(_score) {
 	if (array_length(global.scores) >= HIGHSCORE_MAX) {
 		
 		// Sort the scores and get the last one to compare against new score
-		var _arr = multi_sort_by_score(global.scores);
-		var _lowest_score = global.scores[array_length(_arr) - 1].value;
+		//var _arr = multi_sort_by_score(global.scores);
+		//var _lowest_score = global.scores[array_length(_arr) - 1].value;
+		var _lowest_score = get_lowest_highscore();
 		
 		// When new score is higher replace last one
 		if (_score.value > real(_lowest_score)) {
