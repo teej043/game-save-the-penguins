@@ -23,22 +23,35 @@ if (ds_map_find_value(async_load, "id") == global.req_token_validate) {
 		}
 		
 	} else {
-	
-		var _resp = json_parse(async_load[? "result"]);
 		
-		// There was no response.
-		if (_resp.code == "jwt_auth_invalid_token") {
-			show_debug_message($"message: {_resp.message}");
+		var _error = async_load[? "result"]; 
+		
+		try {
+			if (_error != "") {
 			
-			show_debug_message("token is invalid");
-			global.is_token_valid = false;
+				show_debug_message($"error response: {async_load[? "result"]}");
+			
+				var _resp = json_parse(_error);
+		
+				// There was error response.
+				if (_resp.code == "jwt_auth_invalid_token") {
+					show_debug_message($"message: {_resp.message}");
+			
+					show_debug_message("token is invalid");
+					global.is_token_valid = false;
 				
-			show_debug_message("request new token");
-			online_highscore_token_request();
+					show_debug_message("request new token");
+					online_highscore_token_request();
+				}
+			}
 		}
-				
+		catch(error) {
+			show_debug_message($"unhandled exception: {error}");
+					show_debug_message("api not reachable");
+		global.highscores_unreachable = true;
+		}
+		
 	}
-
 }
 
 
@@ -116,11 +129,10 @@ if (ds_map_find_value(async_load, "id") == global.req_getscores)
 if (ds_map_find_value(async_load, "id") == global.req_postscores) {
     var _status = async_load[? "status"];
     var _r_str = (_status == 0) ? async_load[? "result"] : "null";
-	
-	var _temp = json_parse(_r_str);
-	
-	if (_temp != "null") {
-		// show_message($"request posted. server response is: {_temp}");
+
+	if (_r_str != "null") {
+		var _temp = json_parse(_r_str);
+		show_debug_message($"request posted. server response is: {_temp}");
 	} else {
 		show_debug_message("api not reachable");
 		global.highscores_unreachable = true;
