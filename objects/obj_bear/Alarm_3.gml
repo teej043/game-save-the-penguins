@@ -1,4 +1,4 @@
-/// @description Check every 2 seconds if stucked
+/// @description Check every 2 seconds if pinned to an obstacle
 // You can write your code in this editor
 
 if not is_stunned && not is_crashed && not is_koed {

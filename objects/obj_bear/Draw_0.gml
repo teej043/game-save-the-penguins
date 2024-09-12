@@ -10,3 +10,5 @@ draw_text(x, y+60, string(target));
 draw_text(x, y+80, string(instance_exists(target)));
 
 }
+
+draw_text(x, y+100, string(direction));

@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-/// @function									knockback(_distance, _startx, _starty, _obj, _checks)
+/// @function									knockback(_distance, _startx, _starty, _obj, _checks, _speed, __facedir)
 /// @description								Knocks back the calling instance
 /// @param {real} _distance						How far the knockback
 /// @param {real} _startx 						Starting position x
@@ -10,9 +10,10 @@
 /// @param {real} _rot							How much change in direction when check fails
 /// @param {real} _checks 						How many times to check if destination is clear
 /// @param {real} _speed 						Speed
+/// @param {bool} _bouncedir 					Force direction of bounce
 
 
-function knockback(_distance, _startx, _starty, _obj = noone, _rot = 30, _checks = 5, _speed = 1){
+function knockback(_distance, _startx, _starty, _obj = noone, _rot = 5, _checks = 5, _speed = 1, _bouncedir = BOUNCEDIR.DEFAULT){
 
 	speed = 0;
 	
@@ -24,11 +25,19 @@ function knockback(_distance, _startx, _starty, _obj = noone, _rot = 30, _checks
 	
 	do {
 		
-		_x = -lengthdir_x(5, point_direction(_startx, _starty, x, y) + _irot);
-		_y = -lengthdir_y(5, point_direction(_startx, _starty, x, y) + _irot);
+		var _dir = 0;
 		
-		x = x + _x;
-		y = y + _y;
+		switch(_bouncedir) {
+			case BOUNCEDIR.FRONT : _dir = point_direction(_startx, _starty, x, y); break;
+			case BOUNCEDIR.EAST : _dir = 0; break;
+			case BOUNCEDIR.NORTH : _dir = 90; break;
+			case BOUNCEDIR.WEST : _dir = 180; break;
+			case BOUNCEDIR.SOUTH : _dir = 270; break;
+			default: _dir = point_direction(x, y, _startx, _starty); break;
+		}
+		
+		_x = -lengthdir_x(5, _dir + _irot);
+		_y = -lengthdir_y(5, _dir + _irot);
 		
 		_tx = x + _x;
 		_ty = y + _y;

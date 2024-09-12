@@ -1,3 +1,6 @@
+/// @description Collision with the hero
+// You can write your code in this editor
+
 /// @description Collision with player tails
 // You can write your code in this editor
 

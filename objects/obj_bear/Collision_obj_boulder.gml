@@ -17,7 +17,7 @@ if is_stunned && !is_crashed {
 	instance_create_layer(x, y - 40, "Effects", obj_fx,{
 	image_speed : 0.2});
 	
-	knockback(20, other.x, other.y, obj_boulder, 30, 10, random_range(1, knockback_spd));
+	knockback(20, other.x, other.y, obj_boulder, 5, 10, random_range(knockback_spd, knockback_spd + 5), true);
 	
 	alarm[0] = -1;
 	alarm[0] = 30;

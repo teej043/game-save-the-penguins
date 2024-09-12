@@ -3,3 +3,12 @@ enum GAME_STATE {
 	RUNNING,
 	UPGRADING
 }
+
+enum BOUNCEDIR {
+	DEFAULT = -1,
+	FRONT = 0,
+	EAST = 1,
+	NORTH = 2,
+	WEST = 3,
+	SOUTH = 4
+}

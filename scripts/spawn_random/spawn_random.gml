@@ -38,7 +38,7 @@ function spawn_random(_obj, _pad, _out = false, _side = choose("E", "N", "W", "S
 		_i = instance_create_depth(_xx, _yy, -200, _obj);
 		
 	} else {
-		_i = instance_create_depth(clamp(random(view_wport[0]), _pad, room_width - _pad), clamp(random(view_hport[0]), _pad, room_height - _pad), -200, _obj);
+		_i = instance_create_depth(clamp(random(room_width), _pad, room_width - _pad), clamp(random(room_height), _pad, room_height - _pad), -200, _obj);
 	}
 	
 	return _i;

@@ -22,8 +22,8 @@ if (is_tail_end) {
 		}
 	
 		if (!instance_exists(obj_flag)){
-			var _i = spawn_random(obj_flag, 500);
-			spawn_check_safe_pos(obj_bear,100,200, _i);
+			var _i = spawn_random(obj_flag, 1000);
+			spawn_check_safe_pos(obj_bear,1000,200, _i);
 		}
 	
 		// Reward a score

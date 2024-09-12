@@ -10,7 +10,7 @@ if is_tail_end {
 	
 	is_following = false;
 	
-	knockback(5, front.x, front.y, obj_boulder,,,7);
+	knockback(5, front.x, front.y, obj_boulder,,,7,BOUNCEDIR.FRONT);
 	
 	alarm[2] = 30;
 
