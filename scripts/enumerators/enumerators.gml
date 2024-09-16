@@ -12,3 +12,35 @@ enum BOUNCEDIR {
 	WEST = 3,
 	SOUTH = 4
 }
+
+enum POSITION {
+	TOPLEFT = 0,
+	TOPCENTER = 1,
+	TOPRIGHT = 2,
+	MIDLEFT = 3,
+	MIDCENTER = 4,
+	MIDRIGHT = 5,
+	BOTLEFT = 6,
+	BOTCENTER = 7,
+	BOTRIGHT = 8,
+}
+
+enum CONTENTTYPE {
+	HEADING = 0,
+	TEXTS = 1,
+	ICON = 2,
+	DETAILS = 3,
+}
+
+enum HALIGN {
+	LEFT = 0,
+	CENTER = 1,
+	RIGHT = 2,
+}
+
+enum VALIGN {
+	TOP = 0,
+	MIDDLE = 1,
+	RIGHT = 2,
+}
+

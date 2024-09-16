@@ -45,7 +45,7 @@ if file_exists("conf.ini") {
 	show_debug_message($"token from ini file: {global.token}");
 }
 
-
+global.player_name = "Anon";
 
 global.is_token_valid = false;
 global.highscores_unreachable = false;
@@ -102,7 +102,13 @@ room_goto_next();
 // get scores
 alarm[1] = 10;
 
+// TESTING
+
 // test post score NOTE: this erases scores
 // alarm[0] = 360;
 // alarm[0] = 460;
+
+// testing
+alarm[11] = 360;
+
 

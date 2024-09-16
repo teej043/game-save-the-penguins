@@ -10,6 +10,57 @@ draw_text(view_wport[0] - 10, 10, score);
 draw_set_halign(0);
 draw_set_font(fnt_main);
 
+
+// Incremental height variable
+var _yy = y;
+
+// Draw the panel
+
+draw_sprite_ext(props.sprite, 0, x, y, box_spr_scalex, box_spr_scaley, 0, -1, 1);
+
+
+if (array_length(props.content) > 1) {
+	// Draw tabs if more than one content page	
+	
+} 
+
+// Draw elements for current tab
+for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
+	var _data = props.content[tab_index].elements[_i];
+	switch(_data.type) {
+		case CONTENTTYPE.HEADING:
+			draw_set_font(fnt_main);
+			draw_set_halign(_data.halign);
+			draw_set_valign(_data.valign);
+			_yy = _yy + string_height_ext(_data.value, 0, box_inner_width);
+			switch(_data.halign) {
+				case fa_left: draw_text_ext(box_x, _yy, _data.value, -1, box_inner_width); break;
+				case fa_center : draw_text_ext(box_x + (box_inner_width / 2), _yy, _data.value, -1, box_inner_width); break;
+				case fa_right : draw_text_ext(box_x + box_inner_width, _yy, _data.value, -1, box_inner_width); break;
+			}
+			break;
+		case CONTENTTYPE.TEXTS:
+			draw_set_font(fnt_body);
+			draw_set_halign(_data.halign);
+			draw_set_valign(_data.valign);
+			_yy = _yy + string_height_ext(_data.value, 0, box_inner_width);
+			switch(_data.halign) {
+				case fa_left: draw_text_ext(box_x, _yy, _data.value, -1, box_inner_width); break;
+				case fa_center : draw_text_ext(box_x + (box_inner_width / 2), _yy, _data.value, -1, box_inner_width); break;
+				case fa_right : draw_text_ext(box_x + box_inner_width, _yy, _data.value, -1, box_inner_width); break;
+			}
+			break;
+	}
+}
+
+
+// Reset
+draw_set_font(fnt_main);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+
+
 if (VISUAL_DEBUG) {
 	
 	var _lh = 30;

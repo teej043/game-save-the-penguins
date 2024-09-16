@@ -6,14 +6,14 @@
 /// @param {real} _distance						How far the knockback
 /// @param {real} _startx 						Starting position x
 /// @param {real} _starty 						Starting position y
-/// @param {Id.Instance|Asset.GMObject} _obj	Make sure that destination does not collide with this object
+/// @param {Asset.GMObject} _obj	Make sure that destination does not collide with this object
 /// @param {real} _rot							How much change in direction when check fails
 /// @param {real} _checks 						How many times to check if destination is clear
 /// @param {real} _speed 						Speed
 /// @param {bool} _bouncedir 					Force direction of bounce
 
 
-function knockback(_distance, _startx, _starty, _obj = noone, _rot = 5, _checks = 5, _speed = 1, _bouncedir = BOUNCEDIR.DEFAULT){
+function knockback(_distance, _startx, _starty, _obj, _rot = 5, _checks = 5, _speed = 1, _bouncedir = BOUNCEDIR.DEFAULT){
 
 	speed = 0;
 	
