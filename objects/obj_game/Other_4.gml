@@ -26,3 +26,7 @@ if (room == rm_gameover) {
 		show_message(_msg);
 	}
 }
+
+if (room == rm_game) {
+
+}

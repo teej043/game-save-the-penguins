@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"gui_btn_init",
+  "%Name":"gui_dialog_pause",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"gui_btn_init",
+  "name":"gui_dialog_pause",
   "parent":{
-    "name":"GUI",
-    "path":"folders/Scripts/GUI.yy",
+    "name":"Dialogs",
+    "path":"folders/Scripts/Dialogs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -8,7 +8,6 @@
   "instanceCreationOrder":[
     {"name":"inst_5C9CEA27","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_670BD678","path":"rooms/rm_game/rm_game.yy",},
-    {"name":"inst_4EF8066D","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_5EAF21FF","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_E6BB7B8","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_2295CBA9","path":"rooms/rm_game/rm_game.yy",},
@@ -55,11 +54,12 @@
     {"name":"inst_1BD2A0AC","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_3048E05A","path":"rooms/rm_game/rm_game.yy",},
     {"name":"inst_473EF0B7","path":"rooms/rm_game/rm_game.yy",},
+    {"name":"inst_2135235E","path":"rooms/rm_game/rm_game.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"GUI_layer","depth":-1,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_4EF8066D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EF8066D","objectId":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2135235E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2135235E","objectId":{"name":"obj_ui_score","path":"objects/obj_ui_score/obj_ui_score.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},
       ],"layers":[],"name":"GUI_layer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Effects","depth":99,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_19F017BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19F017BD","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":64.0,},

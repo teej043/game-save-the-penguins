@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"gui_init",
   "parent":{
-    "name":"gui",
-    "path":"folders/Scripts/gui.yy",
+    "name":"GUI",
+    "path":"folders/Scripts/GUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,8 +6,10 @@ function player_collision_to_obstacle(){
 		speed = 0;
 		if (score > 0) {
 			score -= 1;
-			global.crashes += 1;
+			
 		}
+		
+		global.crashes += 1;
 	
 		audio_play_sound(snd_crash, 12, false, 0.2);
 		 audio_play_sound(snd_umph, 10, false);

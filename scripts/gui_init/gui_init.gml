@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function gui_init(){
 
+	if is_undefined(props) exit;
+	
 	cx = 0;
 	cy = 0;
 	bw = display_get_gui_width();
@@ -60,29 +62,32 @@ function gui_init(){
 	box_x = x + props.padding;
 	box_y = y + props.padding;
 	
-	for(var _i = 0; _i < array_length(props.actions); _i++) {
-		var _data = props.actions[_i];
-		show_message(_data);
-		var _btn = instance_create_layer(box_x, box_y + box_inner_height, "GUI_layer", obj_gui_btn)
-		with (_btn) {
-			props = other.props.actions[_i];
+	button_count = array_length(props.actions);
+	
+	if array_length(buttons) == 0 {
+	
+		for(_i = 0; _i < button_count; _i++) {
+			var _data = props.actions[_i];
+			var _btn = instance_create_layer(box_x, box_y + box_inner_height, "GUI_layer", obj_gui_btn)
+			with (_btn) {
+				props = other.props.actions[other._i];
+				gui_btn_init();
 			
-			gui_btn_init();
+				if (other.button_count > 0) {
+					var _partition = other.box_inner_width / other.button_count;
+					var _area = (_partition * other._i);
+					x = other.box_x + _area + (_partition/2) - (btnw/2);
+				} else {
+					x = (other.box_x + (other.box_inner_width/2)) - btnw/2;
+				}
 			
-			if (array_length(other.buttons) > 0) {
-				x = other.box_x;
-			} else {
-				x = (other.box_x + (other.box_inner_width/2)) - btnw/2;
+				y = (other.box_y + other.box_inner_height) - btnh;
+				depth = other.depth - 1;
+			
+				gui_btn_init();
 			}
-			
-			y = (other.box_y + other.box_inner_height) - btnh;
-			depth = other.depth - 1;
-			
-			gui_btn_init();
-			show_message(props);
-		}
-		array_push(buttons, _btn);
+			array_push(buttons, _btn);
 		
+		}
 	}
-
 }

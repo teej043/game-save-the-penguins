@@ -15,7 +15,7 @@ if props.shadow {
 }
 
 if (props.width > 0) {
-	draw_text_color(tx, ty, props.label, -1, -1, -1, -1, hovered ? 1: 0.5);
+	draw_text_color(tx, hovered ? ty - 1 : ty , props.label, -1, -1, -1, -1, 1);
 } else {
-	draw_text_color(tx, ty, props.label, -1, -1, -1, -1, hovered ? 1: 0.5);
+	draw_text_color(tx, hovered ? ty - 1 : ty, props.label, -1, -1, -1, -1, 1);
 }

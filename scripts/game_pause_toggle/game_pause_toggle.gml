@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function pause_toggle(){
+function game_pause_toggle(){
 	if (room == rm_game) {
 		
 		if (global.game_state == GAME_STATE.RUNNING) {
@@ -8,8 +8,8 @@ function pause_toggle(){
 			
 			audio_sound_gain(snd_bg_main,0.2,500);
 		
-			if !instance_exists(obj_menu_pause) {
-				instance_create_layer(0,0,"GUI_layer",obj_menu_pause);
+			if !instance_exists(dialog_pause) {
+				gui_dialog_pause();
 			}
 		
 			for (var _i = 0; _i < instance_count; _i++) {
@@ -43,8 +43,8 @@ function pause_toggle(){
 				
 				audio_sound_gain(snd_bg_main,0.6,500);
 			
-				if instance_exists(obj_menu_pause) {
-					instance_destroy(obj_menu_pause);
+				if instance_exists(dialog_pause) {
+					instance_destroy(dialog_pause);
 				}
 			
 				for (var _i = 0; _i < array_length(arr_alarms); _i++) {

@@ -64,7 +64,7 @@ global.crashes = 0;
 global.lost_flags = 0;
 
 
-
+dialog_pause = noone;
 
 
 if (global.token == "" || global.token == "undefined") {
@@ -103,6 +103,12 @@ room_goto_next();
 alarm[1] = 10;
 
 // TESTING
+
+
+global.ft_test = function test_trigger() {
+	show_message("wah");
+}
+
 
 // test post score NOTE: this erases scores
 // alarm[0] = 360;

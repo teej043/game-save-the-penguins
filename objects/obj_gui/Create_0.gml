@@ -1,60 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-ft_test = function test_trigger() {
-	show_message("wah");
-}
-
-props = {
-	sprite : spr_btn,
-	width : 350,
-	height: 400,
-	padding: 15,
-	margin: 15,
-	position: POSITION.MIDCENTER,
-	offset_x: 0,
-	offset_y: 0,
-	content: [{
-		label : "Base",
-		elements : [{
-			type: CONTENTTYPE.HEADING,
-			height: 0,
-			halign: fa_center,
-			valign: fa_middle,
-			value: "Heading",
-			vpadding: 5,
-		},
-		{
-			type: CONTENTTYPE.TEXTS,
-			height: 0,
-			halign: fa_center,
-			valign: fa_top,
-			value: "Lorem ipsum dolor sit amet Curabitur suscipit suscipit tellus. Etiam rhoncus. Aenean ut eros et nisl sagittis vestibulum. Nunc sed turpis. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.",
-			vpadding: 5,
-		}]
-	}],
-	actions: [
-	{
-		inactive: false,
-		label: "Button",
-		sprite: spr_btn,
-		label: "Label",
-		padding: 15,
-		trigger: test_func,
-		width: 0,
-		height: 0,
-		font: fnt_main,
-		halign: fa_center,
-		valign: fa_middle,
-		shadow: c_dkgrey
-	}]
-	
-}
 
 // cx = camera_get_view_x(view_camera[0]);
 // cy = camera_get_view_y(view_camera[0]);
 // bw = display_get_gui_width();
 // bh = display_get_gui_height();
+
+fn_escape = function (){
+	keyboard_key_press(vk_escape);
+}
+
+fn_dismiss = function (){
+	instance_destroy();
+}
+
+props = {};
 
 box_spr_scalex = 0;
 box_spr_scaley = 0;
@@ -65,12 +26,13 @@ box_y = 0;
 
 tab_index = 0;
 
+button_count = 0;
 buttons = [];
+_i = 0;
 
-gui_init();
 
+//show_debug_message(props.content[tab_index].elements[0].value);
 
-show_debug_message(props.content[tab_index].elements[0].value);
 /*
 
 

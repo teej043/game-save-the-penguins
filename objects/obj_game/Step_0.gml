@@ -11,7 +11,5 @@ if (browser_width != bw || browser_height !=bh) {
 
 
 if (keyboard_check_pressed(vk_escape)) {
-	
-	pause_toggle();
-	
+	game_pause_toggle();
 }
