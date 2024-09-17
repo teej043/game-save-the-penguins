@@ -51,7 +51,7 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 				case fa_center : draw_text_ext(box_x + (box_inner_width / 2), _yy, _data.value, -1, box_inner_width); break;
 				case fa_right : draw_text_ext(box_x + box_inner_width, _yy, _data.value, -1, box_inner_width); break;
 			}
-			_yy = _yy + string_height_ext(_data.value, -1, box_inner_width) + props.content[tab_index].spacing;
+			_yy = _yy + string_height_ext(_data.value, -1, box_inner_width) + (props.content[tab_index].spacing * 2);
 			break;
 		case CONTENTTYPE.TEXTS:
 			draw_set_font(fnt_body);
@@ -68,9 +68,13 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 			break;
 		case CONTENTTYPE.INPUT:
 			draw_set_font(fnt_main);
+			draw_set_halign(fa_center);
+			draw_set_valign(fa_top);
 			var _th = string_height("TEST");
-			draw_rectangle(box_x, _yy, box_x + box_inner_width, _yy + _th, 1);
-			draw_text(box_x + 10, _yy, _data.value);
+			draw_set_alpha(0.2);
+			draw_rectangle_color(box_x, _yy, box_x + box_inner_width, _yy + _th, c_black, c_black, c_black, c_black, 0);
+			draw_set_alpha(1);
+			draw_text(box_x + box_inner_width/2, _yy, keyboard_string);
 			_yy = _yy + _th + props.content[tab_index].spacing;
 			break;
 	}

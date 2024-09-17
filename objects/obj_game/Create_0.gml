@@ -112,6 +112,8 @@ global.ft_test = function test_trigger() {
 }
 
 
+
+
 // test post score NOTE: this erases scores
 // alarm[0] = 360;
 // alarm[0] = 460;

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"gui_dialog_gameover",
+  "%Name":"gui_dialog_gameover_pre",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"gui_dialog_gameover",
+  "name":"gui_dialog_gameover_pre",
   "parent":{
     "name":"Dialogs",
     "path":"folders/Scripts/Dialogs.yy",

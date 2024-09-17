@@ -64,8 +64,24 @@ function gui_init(){
 	
 	button_count = array_length(props.actions);
 	
-	if array_length(buttons) == 0 {
 	
+	for (_i =0; _i < array_length(props.content[tab_index].elements); _i++) {
+		var _data = props.content[tab_index].elements[_i];
+		switch(_data.type) {
+			case CONTENTTYPE.DETAILS:
+				break;
+			case CONTENTTYPE.HEADING:
+				break;
+			case CONTENTTYPE.TEXTS:
+				break;
+			case CONTENTTYPE.INPUT:
+				keyboard_string = variable_global_get(_data.value);
+				break;
+		}
+	}
+
+	
+	if array_length(buttons) == 0 {
 		for(_i = 0; _i < button_count; _i++) {
 			var _data = props.actions[_i];
 			var _btn = instance_create_layer(box_x, box_y + box_inner_height, "GUI_layer", obj_gui_btn)
@@ -82,7 +98,7 @@ function gui_init(){
 				}
 			
 				y = (other.box_y + other.box_inner_height) - btnh;
-				depth = other.depth - 1;
+				depth = other.depth - 1000;
 			
 				gui_btn_init();
 			}

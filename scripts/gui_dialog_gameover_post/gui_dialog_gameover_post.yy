@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"gui_dialog_gameover_post",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gui_dialog_gameover_post",
+  "parent":{
+    "name":"Dialogs",
+    "path":"folders/Scripts/Dialogs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

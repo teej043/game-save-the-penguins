@@ -13,4 +13,6 @@ function gui_btn_init(){
 	btnh = th + (props.padding * 2);
 
 	hovered = false;
+	
+	
 }

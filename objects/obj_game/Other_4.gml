@@ -3,30 +3,12 @@
 
 if (room == rm_gameover) {
 	
-	// Prepare message
-	var _msg = "";
-			
-	// Enter for highscores
-	if global.highscores_retrieved {
-				
-		if (get_lowest_highscore() >= score) {
-			_msg = $"Saved {score} penguins, but not enough to get you to highscores?";
-			show_message(_msg);
+	online_highscore_get(); // Update highscores
+	
+	gui_dialog_gameover_pre();
 
-		} else {
-			_msg = $"You have saved {score} penguins, enough to get you to rankings. What is your name?";
-			// Requst for player's name
-			if (global.player_name == -1) {
-				global.player_name = get_string_async(_msg, "Unnamed");
-			}
-		}
-					
-	} else {
-		_msg = $"Saved {score} penguins, unfortunately rankings is offline though, but good job anyway.";
-		show_message(_msg);
-	}
 }
 
 if (room == rm_game) {
-
+	// gui_dialog_highscore();
 }
