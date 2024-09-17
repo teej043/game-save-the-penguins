@@ -65,6 +65,8 @@ global.lost_flags = 0;
 
 
 dialog_pause = noone;
+dialog_gameover = noone;
+dialog_highscore = noone;
 
 
 if (global.token == "" || global.token == "undefined") {

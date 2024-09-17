@@ -1,10 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function gui_dialog_highscore(){
+	dialog_highscore = instance_create_layer(0,0,"GUI_layer", obj_gui);
 
-function gui_dialog_pause(){
-	dialog_pause = instance_create_layer(0,0,"GUI_layer", obj_gui);
-
-	with (dialog_pause) {
+	with (dialog_highscore) {
 		props = {
 			sprite : spr_btn,
 			width : 450,
@@ -22,22 +21,18 @@ function gui_dialog_pause(){
 					height: 0,
 					halign: fa_center,
 					valign: fa_middle,
-					value: "Paused",
+					value: "Rankings",
 					vpadding: 5,
-				},
-				{
-					type: CONTENTTYPE.DETAILS,
+				},{
+					type: CONTENTTYPE.TEXTS,
 					height: 0,
-					value: [{
-						label: "Penguins saved" ,
-						source: "score"
-					},{
-						label: "Bears ko'ed" ,
-						source: "knockedout_enemies"
-					},{
-						label: "Crashes",
-						source: "crashes"
-					}]
+					halign: fa_center,
+					valign: fa_middle,
+					value: "Your score is high enough to be on the rankings, great job. What is your name?",
+					vpadding: 5,
+				},{
+					type: CONTENTTYPE.INPUT,
+					value: "playername"
 				}]
 			}],
 			actions: [

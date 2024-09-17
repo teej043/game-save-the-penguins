@@ -1,10 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function gui_dialog_gameover(){
+	dialog_gameover = instance_create_layer(0,0,"GUI_layer", obj_gui);
 
-function gui_dialog_pause(){
-	dialog_pause = instance_create_layer(0,0,"GUI_layer", obj_gui);
-
-	with (dialog_pause) {
+	with (dialog_gameover) {
 		props = {
 			sprite : spr_btn,
 			width : 450,
@@ -29,9 +28,6 @@ function gui_dialog_pause(){
 					type: CONTENTTYPE.DETAILS,
 					height: 0,
 					value: [{
-						label: "Penguins saved" ,
-						source: "score"
-					},{
 						label: "Bears ko'ed" ,
 						source: "knockedout_enemies"
 					},{

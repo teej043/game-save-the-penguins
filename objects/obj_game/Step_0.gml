@@ -11,5 +11,13 @@ if (browser_width != bw || browser_height !=bh) {
 
 
 if (keyboard_check_pressed(vk_escape)) {
-	game_pause_toggle();
+	
+	if (room == rm_highscore) {
+		room_goto(rm_menu);
+	}
+	
+	if (room == rm_game) {
+		game_pause_toggle();
+	}
+	
 }

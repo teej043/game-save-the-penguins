@@ -30,6 +30,7 @@ enum CONTENTTYPE {
 	TEXTS = 1,
 	ICON = 2,
 	DETAILS = 3,
+	INPUT = 4,
 }
 
 enum HALIGN {

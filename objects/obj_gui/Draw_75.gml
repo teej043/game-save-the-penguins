@@ -66,6 +66,13 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 			
 			//show_message(string_height_ext(_data.value, 0, box_inner_width));
 			break;
+		case CONTENTTYPE.INPUT:
+			draw_set_font(fnt_main);
+			var _th = string_height("TEST");
+			draw_rectangle(box_x, _yy, box_x + box_inner_width, _yy + _th, 1);
+			draw_text(box_x + 10, _yy, _data.value);
+			_yy = _yy + _th + props.content[tab_index].spacing;
+			break;
 	}
 }
 

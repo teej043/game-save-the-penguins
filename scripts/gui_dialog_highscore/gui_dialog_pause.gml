@@ -29,9 +29,6 @@ function gui_dialog_pause(){
 					type: CONTENTTYPE.DETAILS,
 					height: 0,
 					value: [{
-						label: "Penguins saved" ,
-						source: "score"
-					},{
 						label: "Bears ko'ed" ,
 						source: "knockedout_enemies"
 					},{

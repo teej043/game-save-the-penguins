@@ -7,8 +7,10 @@
 // bw = display_get_gui_width();
 // bh = display_get_gui_height();
 
-fn_escape = function (){
-	keyboard_key_press(vk_escape);
+fn_pause = function (){
+	with(obj_game) {
+		game_pause_toggle();
+	}
 }
 
 fn_dismiss = function (){

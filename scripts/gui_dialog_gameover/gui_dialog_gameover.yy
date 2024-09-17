@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"game_pause_toggle",
+  "%Name":"gui_dialog_gameover",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"game_pause_toggle",
+  "name":"gui_dialog_gameover",
   "parent":{
-    "name":"Game",
-    "path":"folders/Scripts/Game.yy",
+    "name":"Dialogs",
+    "path":"folders/Scripts/Dialogs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
