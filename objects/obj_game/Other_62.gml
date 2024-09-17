@@ -47,8 +47,8 @@ if (ds_map_find_value(async_load, "id") == global.req_token_validate) {
 		}
 		catch(error) {
 			show_debug_message($"unhandled exception: {error}");
-					show_debug_message("api not reachable");
-		global.highscores_unreachable = true;
+			show_debug_message("api not reachable");
+			global.highscores_unreachable = true;
 		}
 		
 	}
@@ -133,12 +133,13 @@ if (ds_map_find_value(async_load, "id") == global.req_postscores) {
 	if (_r_str != "null") {
 		var _temp = json_parse(_r_str);
 		show_debug_message($"request posted. server response is: {_temp}");
+		if instance_exists(dialog_highscore) {
+			instance_destroy(dialog_highscore);
+		}
+		gui_dialog_gameover_post();
 	} else {
 		show_debug_message("api not reachable");
 		global.highscores_unreachable = true;
 	}
 }
-
-
-
 

@@ -3,6 +3,13 @@
 function gui_dialog_gameover_post(){
 	dialog_gameover = instance_create_layer(0,0,"GUI_layer", obj_gui);
 
+	var _trigger_fn = function () {
+		if instance_exists(dialog_gameover) {
+			instance_destroy(dialog_gameover);
+		}
+		room_goto(rm_menu);
+	}
+	
 	with (dialog_gameover) {
 		props = {
 			sprite : spr_btn,
@@ -21,7 +28,7 @@ function gui_dialog_gameover_post(){
 					height: 0,
 					halign: fa_center,
 					valign: fa_middle,
-					value: "Paused",
+					value: "Game Over",
 					vpadding: 5,
 				},
 				{
@@ -40,9 +47,9 @@ function gui_dialog_gameover_post(){
 			{
 				inactive: false,
 				sprite: spr_btn,
-				label: "Resume",
+				label: "Game Menu",
 				padding: 15,
-				trigger: fn_pause,
+				trigger: _trigger_fn,
 				width: 0,
 				height: 0,
 				font: fnt_main,
@@ -55,7 +62,7 @@ function gui_dialog_gameover_post(){
 				sprite: spr_btn,
 				label: "Quit",
 				padding: 15,
-				trigger: global.ft_test,
+				trigger: _trigger_fn,
 				width: 0,
 				height: 0,
 				font: fnt_main,

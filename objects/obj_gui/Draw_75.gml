@@ -30,6 +30,7 @@ draw_sprite_ext(props.sprite, 0, x, y, box_spr_scalex, box_spr_scaley, 0, -1, 1)
 // Draw elements for current tab
 for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 	var _data = props.content[tab_index].elements[_i];
+	var _th = 0;
 	switch(_data.type) {
 		case CONTENTTYPE.DETAILS:
 			draw_set_font(fnt_main);
@@ -70,12 +71,17 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 			draw_set_font(fnt_main);
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_top);
-			var _th = string_height("TEST");
+			_th = string_height("TEST");
 			draw_set_alpha(0.2);
 			draw_rectangle_color(box_x, _yy, box_x + box_inner_width, _yy + _th, c_black, c_black, c_black, c_black, 0);
 			draw_set_alpha(1);
-			draw_text(box_x + box_inner_width/2, _yy, keyboard_string);
+			draw_text(box_x + box_inner_width/2, _yy, variable_global_get(_data.value));
 			_yy = _yy + _th + props.content[tab_index].spacing;
+			break;
+		case CONTENTTYPE.SPACER:
+			draw_set_font(fnt_main);
+			_th = string_height("TEST");
+			_yy = _yy + _th;
 			break;
 	}
 }

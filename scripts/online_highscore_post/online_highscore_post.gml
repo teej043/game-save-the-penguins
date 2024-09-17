@@ -17,8 +17,6 @@ function online_highscore_post(_score) {
 	if (array_length(global.scores) >= HIGHSCORE_MAX) {
 		
 		// Sort the scores and get the last one to compare against new score
-		//var _arr = multi_sort_by_score(global.scores);
-		//var _lowest_score = global.scores[array_length(_arr) - 1].value;
 		var _lowest_score = get_lowest_highscore();
 		
 		// When new score is higher replace last one
@@ -46,13 +44,6 @@ function online_highscore_post(_score) {
 		ds_map_add(_headers, "Content-Type", "application/json");
 		ds_map_add(_headers, "Host", HIGHSCORE_HOST);
 
-
-		/*
-		show_message(ds_map_find_value(_headers, "Authorization"));
-		show_message(ds_map_find_value(_headers, "Content-Type"));
-		show_message(json_stringify(_data));
-		*/
-	
 	
 		global.req_postscores = http_request($"{HIGHSCORE_URL}/{HIGHSCORE_GAMEID}", "POST", _headers, json_stringify(_data));
 

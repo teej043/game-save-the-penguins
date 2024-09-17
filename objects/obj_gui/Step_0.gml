@@ -16,6 +16,8 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 			{
 			    keyboard_string = string_copy(keyboard_string, 1, 12);
 				variable_global_set(_data.value, keyboard_string);
+			} else {
+				variable_global_set(_data.value, keyboard_string);
 			}
 			break;
 	}
