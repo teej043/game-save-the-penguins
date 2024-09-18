@@ -32,12 +32,16 @@ function online_highscore_post(_score) {
 	
 	// Proceed to posting to online
 	if (global.token != "") {
+		
+		var _sorted = multi_sort_by_score(global.scores);
 	
 		var _data = {
 			acf : {
-				scores : multi_sort_by_score(global.scores)
+				scores : _sorted
 			}
 		};
+		
+		global.scores = _sorted;
 
 		var _headers = ds_map_create();
 		ds_map_add(_headers, "Authorization", $"Bearer {global.token}");
