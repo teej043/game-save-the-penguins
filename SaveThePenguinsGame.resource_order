@@ -97,5 +97,6 @@
     {"name":"spr_shadow","order":6,"path":"sprites/spr_shadow/spr_shadow.yy",},
     {"name":"spr_title","order":1,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_wall_collision_mask","order":16,"path":"sprites/spr_wall_collision_mask/spr_wall_collision_mask.yy",},
+    {"name":"spr_walrus","order":13,"path":"sprites/spr_walrus/spr_walrus.yy",},
   ],
 }
