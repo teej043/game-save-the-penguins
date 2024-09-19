@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"restrict_angle_direction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"restrict_angle_direction",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
