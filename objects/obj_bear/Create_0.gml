@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+is_bear_run = function() {
+	return sprite_index == spr_bear_run_e || sprite_index == spr_bear_run_se;
+}
 
 max_hp = 5;
 hp = 15;

@@ -51,6 +51,7 @@
   },
   "name":"SaveThePenguinsGame",
   "resources":[
+    {"id":{"name":"ImageLoadBar","path":"extensions/ImageLoadBar/ImageLoadBar.yy",},},
     {"id":{"name":"fnt_body","path":"fonts/fnt_body/fnt_body.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},},

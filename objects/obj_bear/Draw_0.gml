@@ -13,3 +13,4 @@ draw_text(x, y+80, string(instance_exists(target)));
 
 draw_text(x, y+100, $"comboed {comboed}");
 draw_text(x, y+120, $"hp {hp}");
+draw_text(x, y+80, $"run {is_bear_run()}");

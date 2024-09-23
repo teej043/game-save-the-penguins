@@ -22,7 +22,7 @@
   "option_html5_index":"use_default",
   "option_html5_interpolate_pixels":false,
   "option_html5_jsprepend":"",
-  "option_html5_loadingbar":"use_default",
+  "option_html5_loadingbar":"ImageLoadBar_hook",
   "option_html5_localrunalert":true,
   "option_html5_outputdebugtoconsole":true,
   "option_html5_outputname":"index.html",
