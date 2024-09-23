@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_sprite(sprite_index, image_index, x, y);
+draw_sprite_ext(sprite_index, image_index, x, y,is_facing_west ? -1 : 1, 1, 0, -1,1);
 
 if VISUAL_DEBUG {
 	
@@ -11,4 +11,5 @@ draw_text(x, y+80, string(instance_exists(target)));
 
 }
 
-draw_text(x, y+100, string(direction));
+draw_text(x, y+100, $"comboed {comboed}");
+draw_text(x, y+120, $"hp {hp}");

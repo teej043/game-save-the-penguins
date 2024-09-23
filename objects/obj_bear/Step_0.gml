@@ -10,6 +10,10 @@ with(my_shadow) {
 	y = other.y;
 }
 
+
+//image_speed = 0.2;
+
+
 if !is_stunned {
 	if instance_exists(target) {
 	

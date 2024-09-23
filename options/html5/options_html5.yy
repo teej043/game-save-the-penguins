@@ -1,6 +1,11 @@
 {
   "$GMHtml5Options":"",
   "%Name":"HTML5",
+  "ConfigValues":{
+    "Mobile Landscape":{
+      "option_html5_interpolate_pixels":"false",
+    },
+  },
   "name":"HTML5",
   "option_html5_allow_fullscreen":true,
   "option_html5_browser_title":"Save The Penguins",

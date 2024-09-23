@@ -1,7 +1,7 @@
 /// @description Collision with player tails
 // You can write your code in this editor
 
-if (!is_stunned) {
+if (hittable) {
 	
 	sprite_index = spr_bear_front_hurt;
 	hp -= 1;
@@ -21,13 +21,19 @@ if (!is_stunned) {
 	direction = _dir;
 	knockback(20, other.x, other.y, obj_boulder, 30, 10, random_range(knockback_spd, knockback_max_spd));
 	
-	
-	
+	alarm[0] = -1;
 	alarm[0] = 30;
 	
-	
 	is_stunned = true;
+	hittable = false;
+	
+	
+} else {
+
+	
 }
+
+
 
 if is_koed {
 	

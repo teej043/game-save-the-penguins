@@ -53,7 +53,7 @@ function gui_dialog_highscore(){
 		props = {
 			sprite : spr_btn,
 			width : 450,
-			height: 300,
+			height: 400,
 			padding: 15,
 			margin: 15,
 			position: POSITION.MIDCENTER,

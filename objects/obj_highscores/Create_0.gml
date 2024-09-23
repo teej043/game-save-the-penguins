@@ -3,7 +3,7 @@
 
 box_spr = spr_btn;
 box_width = 350;
-box_height = 400;
+box_height = 460;
 box_padding = 15;
 
 

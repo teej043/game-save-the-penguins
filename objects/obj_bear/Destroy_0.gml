@@ -3,4 +3,5 @@
 
 global.knockedout_enemies +=1; 
 instance_destroy(my_shadow);
+instance_destroy(my_fx);
 spawn_random(obj_bear, 0, true);
