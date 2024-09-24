@@ -67,6 +67,7 @@ else {
 }
 
 
+
 with (my_shadow) {
 	x = other.x;
 	y = other.y;

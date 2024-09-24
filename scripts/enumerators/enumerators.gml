@@ -46,3 +46,9 @@ enum VALIGN {
 	RIGHT = 2,
 }
 
+enum POWERUP {
+	MOVESPEED = 0,
+	TURNSPEED = 1,
+	DASH = 2,
+	JUMP = 3
+}

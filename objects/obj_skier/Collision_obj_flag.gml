@@ -22,7 +22,7 @@ if (!instance_exists(obj_tail)) {
 		spawn_random(obj_flag, 200);
 	}
 	
-	score += 1;
+	global.score += 1;
 
 }
 

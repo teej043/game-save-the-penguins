@@ -11,12 +11,12 @@ if (_d == msg_scorer_name)
         if (ds_map_find_value(async_load, "result") != "")
         {
 			// Add playername to highscore
-            highscore_add(ds_map_find_value(async_load, "result"), score);
+            highscore_add(ds_map_find_value(async_load, "result"), global.score);
 			// Go back to menu screen
 			
 			var _playerstat = {
 				name: ds_map_find_value(async_load, "result"),
-				value: score,
+				value: global.score,
 				date: date_format("Ymd")
 			}
 			
@@ -24,7 +24,7 @@ if (_d == msg_scorer_name)
 			
 			room_goto(rm_menu);
         } else {
-			highscore_add("Anon", score);
+			highscore_add("Anon", global.score);
 			room_goto(rm_menu);
 		}
     }

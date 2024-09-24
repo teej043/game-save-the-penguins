@@ -10,19 +10,23 @@ normal_image_speed = 2;
 stunned_image_speed = normal_image_speed;
 temp = 1;
 
-speed = 5;
-image_speed = 2;
+
 
 // Upgradeable stats
 
 tail_distance = 70; // distance beetween tails
 turn_speed = 2; // dictates turning speed
+move_speed = 3;
 
 //turning_direction = direction;
 //turning_speed = 0;
 //turning_speed_max = 15;
 
-turning_speed_increment = 1;
+turn_speed_increment = 0.25;
+move_speed_increment = 0.5;
+
+speed = move_speed;
+image_speed = 2;
 
 // Create variables for the mouse anchor position.
 global.mouse_anchor_x = 0;

@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 
+
+
+
 if (VISUAL_DEBUG) {
 	
 	var _lh = 30;

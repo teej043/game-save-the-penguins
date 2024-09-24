@@ -15,7 +15,11 @@ if (!is_stunned && has_recovered) {
 				speed = 0;
 			}
 
-			room_goto(rm_gameover);
+			//room_goto(rm_gameover);
+			
+			var _transition = instance_create_layer(0, 0, "Instances", obj_transition_linear_blur);
+			_transition.target_room = room_next(room);
+		
 			
 			
 		}

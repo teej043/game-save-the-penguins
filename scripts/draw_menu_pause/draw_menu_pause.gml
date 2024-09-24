@@ -15,7 +15,7 @@ function draw_menu_pause(_x, _y, _width, _height){
 	
 	
 	draw_set_halign(fa_right);
-	draw_text(_x + _width, _y + (_txh * 1), $"{score}");
+	draw_text(_x + _width, _y + (_txh * 1), $"{global.score}");
 	draw_text(_x + _width, _y + (_txh * 2), $"{global.knockedout_enemies}");
 	draw_text(_x + _width, _y + (_txh * 3), $"{global.lost_flags}");
 	draw_text(_x + _width, _y + (_txh * 4), $"{global.crashes}");

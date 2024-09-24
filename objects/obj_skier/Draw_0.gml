@@ -12,7 +12,7 @@ if (VISUAL_DEBUG) {
 	draw_text(x,y+60, string(abs(direction) mod (image_number)));
 	draw_text(x,y+80, string((direction * (abs(100 / 360)))));
 	
-	draw_text(x, y+100, string(score mod 5));
+	draw_text(x, y+100, string(global.score mod 5));
 }
 
 

@@ -27,11 +27,11 @@ if (is_tail_end) {
 		}
 	
 		// Reward a score
-		score +=1;
+		global.score +=1;
 		global.attained_flags+=1;
 	
 		// Spawn an enemy every 5 points 
-		if ((score mod 5) == 0) {
+		if ((global.score mod 5) == 0) {
 			spawn_random(obj_bear, 200, true);
 		}
 	

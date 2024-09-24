@@ -4,8 +4,8 @@ function player_collision_to_obstacle(){
 
 	if (!is_stunned) {
 		speed = 0;
-		if (score > 0) {
-			score -= 1;
+		if (global.score > 0) {
+			global.score -= 1;
 			
 		}
 		

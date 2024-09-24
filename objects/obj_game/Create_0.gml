@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+sname = part_system_create();
 
 randomize();
 
@@ -51,6 +52,7 @@ global.is_token_valid = false;
 global.highscores_unreachable = false;
 global.highscores_retrieved = false;
 
+global.score = 0;
 global.scores = [];
 
 global.req_postscores = 0;

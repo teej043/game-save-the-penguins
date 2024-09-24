@@ -4,9 +4,9 @@
 draw_set_halign(fa_right);
 draw_set_font(fnt_score);
 draw_set_color(c_ltgrey);
-draw_text(view_wport[0] - 10 + 1, 10 + 2, score);
+draw_text(view_wport[0] - 10 + 1, 10 + 2, global.score);
 draw_set_color(-1);
-draw_text(view_wport[0] - 10, 10, score);
+draw_text(view_wport[0] - 10, 10, global.score);
 draw_set_halign(0);
 draw_set_font(fnt_main);
 
@@ -38,7 +38,7 @@ for (var _i =0; _i < array_length(props.content[tab_index].elements); _i++) {
 				draw_set_halign(fa_left);
 				draw_text(box_x, _yy, _data.value[_p].label);
 				draw_set_halign(fa_right);
-				draw_text(box_x + box_inner_width, _yy, variable_global_get(string(_data.value[_p].source)));
+				draw_text(box_x + box_inner_width, _yy, variable_global_get(_data.value[_p].source));
 				_yy = _yy + string_height(_data.value[_p].label) + props.content[tab_index].spacing;
 			}
 			

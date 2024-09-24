@@ -8,7 +8,7 @@ function gui_dialog_highscore(){
 	var _fn_submit_score = function() {
 		var _score = {
 			name: global.player_name,
-			value: score,
+			value: global.score,
 			date: date_format("Ymd")
 		}
 		online_highscore_post(_score);
@@ -33,19 +33,19 @@ function gui_dialog_highscore(){
 		// Enter for highscores
 		if global.highscores_retrieved {
 				
-			if (array_length(global.scores) >= 15 && get_lowest_highscore() >= score) {
-				_msg = $"Saved {score} penguins, but not enough to get you to highscores.";
+			if (array_length(global.scores) >= 15 && get_lowest_highscore() >= global.score) {
+				_msg = $"Saved {global.score} penguins, but not enough to get you to highscores.";
 				_trigger_fn = fn_post_game;
 				// _trigger_fn = function() {show_message("wah")};
 				_is_ranked = false;
 			} else {
-				_msg = $"You have saved {score} penguins, enough to get you to rankings. What is your name?";
+				_msg = $"You have saved {global.score} penguins, enough to get you to rankings. What is your name?";
 				_trigger_fn = _fn_submit_score;
 				_is_ranked = true;
 			}
 					
 		} else {
-			_msg = $"Saved {score} penguins, unfortunately rankings is offline though, but good job anyway.";
+			_msg = $"Saved {global.score} penguins, unfortunately rankings is offline though, but good job anyway.";
 			_trigger_fn = fn_post_game;
 			_is_ranked = false;
 		}

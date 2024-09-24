@@ -1,6 +1,6 @@
 // Reinitialize
 
-score = 0;
+global.score = 0;
 global.attained_flags = 0;
 global.knockedout_enemies = 0;
 global.crashes = 0;
