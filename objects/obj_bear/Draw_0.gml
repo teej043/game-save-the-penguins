@@ -9,8 +9,10 @@ draw_text(x, y+40, string(hp));
 draw_text(x, y+60, string(target));
 draw_text(x, y+80, string(instance_exists(target)));
 
-}
-
 draw_text(x, y+100, $"comboed {comboed}");
 draw_text(x, y+120, $"hp {hp}");
-draw_text(x, y+80, $"run {is_bear_run()}");
+draw_text(x, y+140, $"run {is_bear_run()}");
+
+}
+
+

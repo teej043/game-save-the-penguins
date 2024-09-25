@@ -14,8 +14,8 @@ function player_collision_to_obstacle(){
 		audio_play_sound(snd_crash, 12, false, 0.2);
 		 audio_play_sound(snd_umph, 10, false);
 	 
-	 
-		// collision effect
+		// collision effects
+		instance_create_layer(0, 0, "Instances", obj_fx_screenshake,{ duration: 30, magnitude: 3, shakespeed:1 });
 		instance_create_depth(x, y - 40, depth - 10, obj_fx,{
 		image_speed : 0.2});
 	

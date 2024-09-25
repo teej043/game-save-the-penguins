@@ -9,7 +9,7 @@
   "backdropYOffset":0.0,
   "drawOrder":0,
   "emitters":[
-    {"$GMPSEmitter":"","%Name":"GM_Rain","additiveBlend":true,"directionIncrease":0.0,"directionMax":300.0,"directionMin":300.0,"directionWiggle":10.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":2,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":150992889,"GMPresetName":"","gravityDirection":299.0,"gravityForce":0.25,"headPosition":0.0,"lifetimeMax":120.0,"lifetimeMin":40.0,"linkedEmitter":null,"locked":false,"midColour":4211074267,"mode":0,"name":"GM_Rain","orientationIncrease":0.0,"orientationMax":100.0,"orientationMin":100.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.0,"regionW":1200.0,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.25,"scaleY":0.25,"shape":3,"sizeIncrease":0.0,"sizeMax":0.3,"sizeMin":0.3,"sizeWiggle":0.1,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":0,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.25,"speedMin":0.25,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294572543,"texture":13,},
+    {"$GMPSEmitter":"","%Name":"GM_Rain","additiveBlend":true,"directionIncrease":0.0,"directionMax":300.0,"directionMin":300.0,"directionWiggle":10.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":3,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":150992889,"GMPresetName":"","gravityDirection":283.0,"gravityForce":0.1,"headPosition":0.0,"lifetimeMax":160.0,"lifetimeMin":40.0,"linkedEmitter":null,"locked":false,"midColour":4211074267,"mode":0,"name":"GM_Rain","orientationIncrease":0.0,"orientationMax":100.0,"orientationMin":100.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.0,"regionW":1366.0,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.25,"scaleY":0.25,"shape":3,"sizeIncrease":0.0,"sizeMax":0.6,"sizeMin":0.3,"sizeWiggle":0.1,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":0,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.1,"speedMin":0.05,"speedWiggle":1.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294572543,"texture":7,},
   ],
   "name":"part_snow_rain",
   "parent":{
@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "showBackdrop":true,
   "showBackdropImage":false,
-  "xorigin":0,
+  "xorigin":-680,
   "yorigin":0,
 }

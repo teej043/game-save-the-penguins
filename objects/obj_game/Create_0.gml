@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-sname = part_system_create();
+
+global.p_system = part_system_create_layer("GUI_layer", true, part_snow_rain);
+
+part_system_position(global.p_system, mouse_x, mouse_y);
 
 randomize();
 

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if not other.picked_up {
-	show_message($"you got power up index {other.powerup_index}");
+	show_debug_message($"you got power up index {other.powerup_index}");
 	
 	var _pow = other.powerup_index;
 	
