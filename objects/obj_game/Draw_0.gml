@@ -2,7 +2,9 @@
 // You can write your code in this editor
 
 
-
+if is_sprite_gameover and room == rm_gameover {
+	draw_sprite(sprite_gameover, 0, 0,0);
+}
 
 
 if (VISUAL_DEBUG) {

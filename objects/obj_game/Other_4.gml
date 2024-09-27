@@ -5,10 +5,14 @@ if (room == rm_gameover) {
 	
 	online_highscore_get(); // Update highscores
 	
-	gui_dialog_gameover_pre();
+	
+	alarm[10] = 240;
+	
 
 }
 
 if (room == rm_game) {
 	// gui_dialog_highscore();
 }
+
+

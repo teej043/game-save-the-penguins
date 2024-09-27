@@ -12,6 +12,9 @@ arr_speed = [];
 arr_direction = [];
 arr_image_speed = [];
 
+is_sprite_gameover = false;
+sprite_gameover = noone;
+
 add_alarm = function(_instance, _index, _value) {
 	array_push(arr_alarms, {_instance, _index, _value});
 	
