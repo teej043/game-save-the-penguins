@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parent",
-  "eventList":[],
+  "%Name":"obj_particle_system",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_parent",
+  "name":"obj_particle_system",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"VFX",
+    "path":"folders/Objects/VFX.yy",
   },
   "parentObjectId":null,
   "persistent":false,

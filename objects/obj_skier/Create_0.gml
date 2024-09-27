@@ -14,8 +14,7 @@ temp = 1;
 
 // Upgradeable stats
 
-tail_distance = 70; // distance beetween tails
-turn_speed = 2; // dictates turning speed
+turn_speed = 1; // dictates turning speed
 move_speed = 3;
 
 //turning_direction = direction;

@@ -9,12 +9,14 @@ if (is_tail_end) {
 		audio_play_sound(snd_penguin_call, 11, false, 0.3);
 	
 		self.is_tail_end = false;
+		
+		var _dist = global.tail_distance;
 	
 		instance_create_depth(x, y, -100, obj_tail, {
 			front: id,
 			direction : point_direction(x, y, id.x, id.y),
-		    x : id.x - lengthdir_x(tail_distance, direction),
-		    y : id.y - lengthdir_y(tail_distance, direction),
+		    x : id.x - lengthdir_x(_dist, direction),
+		    y : id.y - lengthdir_y(_dist, direction),
 		});
 
 		with other {
