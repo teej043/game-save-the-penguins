@@ -17,7 +17,7 @@ emitter_snow = part_emitter_create(ps);
 
 //emitter_snow_cloud = part_emitter_create(ps);
 part_emitter_region(ps, emitter_snow, x_start, x_start + cam_w, y_start, y_start + cam_h, ps_shape_rectangle, ps_distr_linear);
-part_emitter_stream(ps, emitter_snow, ps_snow, 5);
+part_emitter_stream(ps, emitter_snow, ps_snow, 3);
 
 show_debug_message($"emmiter {x_start}, {y_start}, {x_start + cam_w}, {y_start + cam_h}");
 //part_emitter_region(ps, emitter_snow_cloud, x_start - 20, x_start + cam_w, y_start, y_start + cam_h, ps_shape_rectangle, ps_distr_linear);

@@ -7,6 +7,7 @@ if is_sprite_gameover and room == rm_gameover {
 }
 
 
+
 if (VISUAL_DEBUG) {
 	
 	var _lh = 30;
