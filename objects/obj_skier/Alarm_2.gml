@@ -4,5 +4,5 @@
 with (obj_game) {
 	game_pause_toggle(false);
 }
-
-alarm[3] = 120;
+speed = 0;
+alarm[3] = 30;

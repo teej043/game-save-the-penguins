@@ -42,6 +42,7 @@ function gui_dialog_highscore(){
 				_msg = $"You have saved {global.score} penguins, enough to get you to rankings. What is your name?";
 				_trigger_fn = _fn_submit_score;
 				_is_ranked = true;
+				audio_play_sound(snd_bg_win, 8, 0);
 			}
 					
 		} else {

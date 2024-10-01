@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"player_collision_to_allies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_collision_to_allies",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

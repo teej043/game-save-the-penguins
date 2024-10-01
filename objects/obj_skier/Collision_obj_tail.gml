@@ -7,20 +7,8 @@ if (!is_stunned && has_recovered) {
 	if (other.id != behind_tail.id) {
 		if (other.is_following) {
 	
-
-	
-			// Stop player movements
-			speed = 0;
-			with(obj_tail) {
-				speed = 0;
-			}
-
-			room_goto(rm_gameover);
-			
-			//var _transition = instance_create_layer(0, 0, "Instances", obj_transition_pixelate);
-			//_transition.target_room = room_next(rm_gameover);
-		
-			
+			// Initiate pre game over
+			player_collision_to_allies();
 			
 		}
 	}
